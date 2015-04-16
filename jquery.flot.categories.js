@@ -121,7 +121,7 @@ as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
         if (series[axis].options.mode != "categories")
             return;
         
-        if (!series[axis].categories) {
+       // if (!series[axis].categories) {
             // parse options
             var c = {}, o = series[axis].options.categories || {};
             if ($.isArray(o)) {
@@ -134,7 +134,7 @@ as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
             }
             
             series[axis].categories = c;
-        }
+       // }
 
         // fix ticks
         if (!series[axis].options.ticks)
